@@ -4,6 +4,6 @@
 .mypy_cache
 
 .idea/
-gateway.yml
-.env
+*gateway.yml
+*.env
 *.keys
