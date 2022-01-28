@@ -1,17 +1,17 @@
 # Replace to BTS in prod
-core_asset: TEST
+core_asset: KES
 
 # Gateway prefix is a main gateway asset. It must be created in bitshares first.
-gateway_prefix: FINTEHTEST
+gateway_prefix: RUDEX
 
 #Asset for distribution
-gateway_distribute_asset: USDT
+gateway_distribute_asset: USD
 
 # Account for distribution (NOT asset owner! Just Gateway Wallet (funded by Governance wallet))
 account: fincubator-gateway-test
 
 keys:
-  active: 5JEEBPVnDwttRkbLzmFKmgoZ1ELxBMnjnEiX4JhvVfeDNQbX936
+  active: 5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3
   memo: 5KfyHL8gzAKiKz3wcc3c4EJgQi64nkuYZqAUN63QD5xxa2FogdW
 
 min_deposit: 0.1
@@ -21,4 +21,4 @@ max_withdrawal: 10
 
 # Some bitshares nodes list. Highly recommend to use your own API node
 nodes:
-- "wss://testnet.dex.trading/"
+- "wss://node.commodity.llc/ws"
