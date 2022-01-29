@@ -22,6 +22,9 @@ services:
     container_name: gateway
     volumes:
       - ./:/app
+    command: >
+      bash -c "pipenv run alembic upgrade head
+      && pipenv run python . "
     ports:
       - ${HTTP_PORT}:${HTTP_PORT}
     expose:
