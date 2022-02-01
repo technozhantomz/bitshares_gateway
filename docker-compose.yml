@@ -8,6 +8,6 @@ services:
       - ./:/app
     command: >
       bash -c "pipenv run alembic upgrade head
-      && pipenv run python . "
+      && pipenv run python3 . "
     ports:
       - ${HTTP_PORT}:${HTTP_PORT}
