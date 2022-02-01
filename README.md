@@ -37,18 +37,27 @@ Create test *.env* file
 ```bash
 cp .env.example .env
 ```
+**Create and activate environment:**
 
-## Run
+```
+sudo apt-get install python3-venv
+python3 -m venv env
+source env/bin/activate
+```
+
+**Install requirements into environment:**
+pip3 install -r requirements.txt
+```
+
+
 #### Run on production (mainnet)
 ```bash
-sudo docker-compose run -d postgres
-sudo docker-compose run gateway
-```
+sudo docker-compose run -d postgres_bitshares
+sudo docker-compose run bitshares_gateway
+sudo docker-compose run booker``
+sudo docker-compose run -p 8888:8888  booker```
 >Why not 'docker-compose up' command?
 >> Because on production we need some interactive shell to input keys/password
-
-#### Running in testnet
-```bash
 sudo docker-compose up --build -d
 ```
 Will be using default test account

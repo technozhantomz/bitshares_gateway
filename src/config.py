@@ -19,7 +19,7 @@ class Config:
 
     db_driver: str = "postgres+psycopg2"
     db_host: str = "postgres"
-    db_port: int = 5432
+    db_port: int = 5433
     db_user: str = "postgres"
     db_password: str = "postgres"
     db_database: str = "postgres"
@@ -32,15 +32,15 @@ class Config:
     booker_host: str = "0.0.0.0"
     booker_port: int = 8888
 
-    core_asset: str = "TEST"
-    gateway_prefix: str = "FINTEHTEST"
-    gateway_distribute_asset: str = "USDT"
-    account: str = "fincubator-gateway-test"
+    core_asset: str = "KES"
+    gateway_prefix: str = "RUDEX"
+    gateway_distribute_asset: str = "USD"
+    account: str = "dennis"
     keys: dict = {
-        "active": "5JEEBPVnDwttRkbLzmFKmgoZ1ELxBMnjnEiX4JhvVfeDNQbX936",
+        "active": "5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3",
         "memo": "5KfyHL8gzAKiKz3wcc3c4EJgQi64nkuYZqAUN63QD5xxa2FogdW",
     }
-    nodes: list or str = ["wss://testnet.dex.trading/"]
+    nodes: list or str = ["wss://node.commodity.llc/ws"]
 
     min_deposit: float = 0.1
     min_withdrawal: float = 0.1
